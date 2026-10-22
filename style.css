@@ -205,3 +205,109 @@ img { display: block; width: 100%; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+
+:root {
+  color-scheme: light;
+  --red: #111;
+  --red-dark: #555;
+  --yellow: #fff;
+  --black: #111;
+  --white: #f7f7f5;
+  --muted: #777;
+  --line: #dededb;
+  --display: var(--sans);
+}
+
+body { background: var(--white); }
+.site-header { position: relative; z-index: 2; border-top: 0; border-bottom: 1px solid var(--line); background: var(--white); color: var(--black); }
+.brand-mark { border: 1px solid var(--black); color: var(--white); background: var(--black); font-family: var(--sans); font-size: 14px; transform: none; }
+.brand-name { font-family: var(--sans); font-size: 11px; letter-spacing: .04em; }
+.brand-name small { color: var(--muted); font-size: 8px; }
+.main-nav a::after { background: var(--black); }
+.header-cta { border-color: var(--line); }
+.header-cta:hover { color: var(--white); background: var(--black); border-color: var(--black); }
+.hero { min-height: min(760px, calc(100vh - 80px)); background: #171717; }
+.hero-photo img { filter: grayscale(1) contrast(1.04); }
+.hero-shade { background: linear-gradient(90deg, rgba(10,10,10,.88), rgba(10,10,10,.54) 48%, rgba(10,10,10,.12)), linear-gradient(0deg, rgba(0,0,0,.48), transparent 35%); }
+.live-dot { background: #fff; box-shadow: 0 0 12px rgba(255,255,255,.7); }
+.eyebrow-divider, .hero h1 span, .hero-link span { color: #d0d0d0; }
+.hero h1 { font-family: var(--sans); font-size: clamp(64px, 10vw, 126px); font-weight: 800; line-height: .91; letter-spacing: -.075em; text-shadow: none; }
+.hero-intro { max-width: 430px; }
+.button { font-family: var(--sans); font-size: 10px; letter-spacing: .08em; }
+.button-yellow { color: #fff; background: #111; }
+.button-yellow:hover { color: #111; background: #fff; }
+.hero-link { text-transform: uppercase; }
+.hero-link span { color: #fff; }
+.ferrari-badge { width: 122px; height: 122px; padding: 12px; clip-path: none; border: 1px solid rgba(255,255,255,.6); color: #fff; background: rgba(17,17,17,.22); transform: none; }
+.ferrari-badge strong { font: 800 38px/.95 var(--sans); letter-spacing: -.08em; }
+.ferrari-badge > span { font-size: 7px; }
+.ferrari-badge > span:last-child { color: #ddd; font-size: 6px; }
+.hero-scroll { background: #fff; }
+.hero-scroll span { background: #111; }
+.section-label > span, .intro-copy h2 span, .text-link span, .service-number, .service-arrow { color: #111; }
+.intro-copy h2, .section-heading h2, .contact h2 { font-family: var(--sans); font-weight: 700; letter-spacing: -.065em; line-height: .98; }
+.intro-copy h2 span { color: #777; }
+.intro-lead { font-size: 17px; font-weight: 500; }
+.text-link { border-color: #111; }
+.intro-stats strong { font-family: var(--sans); font-size: 40px; letter-spacing: -.06em; }
+.intro-stats small { letter-spacing: .08em; }
+.projects { color: #fff; background: #111; }
+.projects .section-label, .projects .section-heading > p { color: #aaa; }
+.projects .section-label > span, .projects .red-dot { color: #fff; }
+.projects .project-details p, .projects .project-year { color: #aaa; }
+.projects .project-tags span { border-color: #555; color: #ddd; }
+.projects .project-image img { filter: grayscale(1) contrast(1.02); }
+.projects .project-image:hover img { filter: grayscale(.35) contrast(1.05); }
+.section-heading h2 { margin-top: 16px; }
+.project-grid { gap: 42px 24px; }
+.project-wide .project-image, .project-image { height: 340px; }
+.project-wide .project-image { height: 460px; }
+.project-image { background: #292929; }
+.project-image img { transition: transform .55s ease, filter .35s ease; }
+.project-open { color: #111; background: #fff; }
+.project-details h3 { font-family: var(--sans); font-size: 17px; letter-spacing: -.025em; }
+.project-details p { font-size: 11px; }
+.project-tags span { letter-spacing: .04em; }
+.services .section-heading h2 span { color: #777; }
+.service-list { border-top-width: 1px; }
+.service-row { grid-template-columns: 54px 1fr 1fr 26px; }
+.service-row h3 { font-family: var(--sans); font-size: 17px; letter-spacing: -.025em; }
+.service-row p { font-size: 12px; }
+.quote-section { padding-block: 100px; color: #fff; background: #202020; }
+.quote-inner { max-width: 920px; }
+.quote-section .section-label { color: #aaa; }
+.quote-section .section-label > span { color: #fff; }
+.quote-section blockquote { max-width: 820px; margin: 35px 0 22px; font-size: clamp(30px, 5vw, 58px); font-weight: 500; line-height: 1.12; letter-spacing: -.055em; }
+.quote-section p { margin: 0; color: #aaa; font: 9px var(--mono); letter-spacing: .12em; }
+.quote-section p span { padding-inline: 7px; color: #fff; }
+.contact { background: #111; }
+.contact::after { background: #202020; }
+.contact .section-label { color: #aaa; }
+.contact .section-label > span, .contact h2 span { color: #bbb; }
+.contact h2 { font-size: clamp(55px, 9vw, 112px); }
+.contact-inner > p:not(.section-label) { color: #bbb; }
+.contact-mark { color: rgba(255,255,255,.06); }
+.contact-mark span { color: rgba(255,255,255,.14); }
+.site-footer .brand-mark { border-color: #111; color: #fff; background: #111; }
+.validators { display: flex; gap: 16px; }
+.validators a, .site-footer p, .footer-top { color: var(--muted); font: 8px var(--mono); letter-spacing: .035em; }
+.validators a:hover, .footer-top:hover { color: var(--black); }
+.validators a span { color: var(--black); }
+
+@media (max-width: 850px) {
+  .service-row { grid-template-columns: 40px 1fr 1fr 22px; }
+  .site-footer { flex-wrap: wrap; padding-block: 18px; }
+}
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: clamp(58px, 14vw, 88px); }
+  .ferrari-badge { top: 7%; right: 8%; width: 82px; height: 82px; }
+  .ferrari-badge strong { font-size: 28px; }
+  .ferrari-badge > span { font-size: 6px; }
+  .ferrari-badge > span:last-child { font-size: 5px; }
+  .project-wide .project-image, .project-image { height: 255px; }
+  .service-row { grid-template-columns: 29px 1fr 18px; }
+  .quote-section { padding-block: 72px; }
+  .quote-section blockquote { margin-top: 25px; }
+  .validators { width: 100%; justify-content: center; order: 4; padding-top: 8px; }
+}
